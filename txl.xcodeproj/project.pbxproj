@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03383AF91D29ED0D00460052 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 03383AF81D29ED0D00460052 /* libsqlite3.0.tbd */; settings = {ATTRIBUTES = (Required, ); }; };
+		03383AFE1D29EFF500460052 /* SQLiteDB in Resources */ = {isa = PBXBuildFile; fileRef = 03383AFD1D29EFF500460052 /* SQLiteDB */; };
+		03383B001D29F2B200460052 /* data.db in Resources */ = {isa = PBXBuildFile; fileRef = 03383AFF1D29F2B200460052 /* data.db */; };
+		036B843E1D2A0DED00725809 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B2BFF71D265C290072C83D /* ViewController.swift */; };
 		03B2BFF61D265C290072C83D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B2BFF51D265C290072C83D /* AppDelegate.swift */; };
-		03B2BFF81D265C290072C83D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B2BFF71D265C290072C83D /* ViewController.swift */; };
 		03B2BFFB1D265C290072C83D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03B2BFF91D265C290072C83D /* Main.storyboard */; };
 		03B2BFFD1D265C290072C83D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03B2BFFC1D265C290072C83D /* Assets.xcassets */; };
 		03B2C0001D265C290072C83D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03B2BFFE1D265C290072C83D /* LaunchScreen.storyboard */; };
@@ -34,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03383AF81D29ED0D00460052 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		03383AFA1D29EDCD00460052 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		03383AFD1D29EFF500460052 /* SQLiteDB */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SQLiteDB; path = ../../Downloads/hangge_645/SQLiteDB; sourceTree = "<group>"; };
+		03383AFF1D29F2B200460052 /* data.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = data.db; path = ../../Downloads/hangge_645/data.db; sourceTree = "<group>"; };
 		03B2BFF21D265C290072C83D /* txl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = txl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03B2BFF51D265C290072C83D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03B2BFF71D265C290072C83D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03383AF91D29ED0D00460052 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +85,9 @@
 		03B2BFE91D265C290072C83D = {
 			isa = PBXGroup;
 			children = (
+				03383AF81D29ED0D00460052 /* libsqlite3.0.tbd */,
+				03383AFF1D29F2B200460052 /* data.db */,
+				03383AFD1D29EFF500460052 /* SQLiteDB */,
 				03B2BFF41D265C290072C83D /* txl */,
 				03B2C0091D265C290072C83D /* txlTests */,
 				03B2C0141D265C290072C83D /* txlUITests */,
@@ -103,6 +114,7 @@
 				03B2BFFC1D265C290072C83D /* Assets.xcassets */,
 				03B2BFFE1D265C290072C83D /* LaunchScreen.storyboard */,
 				03B2C0011D265C290072C83D /* Info.plist */,
+				03383AFA1D29EDCD00460052 /* Header.h */,
 			);
 			path = txl;
 			sourceTree = "<group>";
@@ -133,8 +145,8 @@
 			buildConfigurationList = 03B2C01A1D265C290072C83D /* Build configuration list for PBXNativeTarget "txl" */;
 			buildPhases = (
 				03B2BFEE1D265C290072C83D /* Sources */,
-				03B2BFEF1D265C290072C83D /* Frameworks */,
 				03B2BFF01D265C290072C83D /* Resources */,
+				03B2BFEF1D265C290072C83D /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -229,7 +241,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03383AFE1D29EFF500460052 /* SQLiteDB in Resources */,
 				03B2C0001D265C290072C83D /* LaunchScreen.storyboard in Resources */,
+				03383B001D29F2B200460052 /* data.db in Resources */,
 				03B2BFFD1D265C290072C83D /* Assets.xcassets in Resources */,
 				03B2BFFB1D265C290072C83D /* Main.storyboard in Resources */,
 			);
@@ -256,7 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03B2BFF81D265C290072C83D /* ViewController.swift in Sources */,
+				036B843E1D2A0DED00725809 /* ViewController.swift in Sources */,
 				03B2BFF61D265C290072C83D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +419,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jsq.txl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/l20141105048/Desktop/txl/txl/Header.h;
 			};
 			name = Debug;
 		};
@@ -416,6 +431,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jsq.txl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/l20141105048/Desktop/txl/txl/Header.h;
 			};
 			name = Release;
 		};
@@ -484,6 +500,7 @@
 				03B2C01C1D265C290072C83D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03B2C01D1D265C290072C83D /* Build configuration list for PBXNativeTarget "txlTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +509,7 @@
 				03B2C01F1D265C290072C83D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03B2C0201D265C290072C83D /* Build configuration list for PBXNativeTarget "txlUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +518,7 @@
 				03B2C0221D265C290072C83D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
